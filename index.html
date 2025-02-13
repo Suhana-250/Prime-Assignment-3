@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="">
+        <label for = "name">Name:</label>
+        <input type="text" id = "name" name = "name"><br><br>
+
+
+        <label for = "email">E-mail:</label>
+        <input type="text" id = "email" name = "email"><br><br>
+
+
+        <label for ="password">Password:</label>
+        <input type="password" id="password" name="password"
+        pattern="^(?=.*\d)(?=.*[a-zA-Z])(?=.*[^a-zA-Z0-9])\S{8,}$" 
+        title="Password must contain at least one number, one alphabet, one symbol, and be at least 8 characters long" required /><br><br>
+
+        <label>Gender:</label>
+        <input type = "radio" id = "male" name ="gender" value = "male" required>
+        <label for = "male">Male</label>
+        <input type = "radio" id = "female" name ="gender" value = "female" required>
+        <label for = "female">Female</label><br><br>
+
+
+        <label>Hobbies:</label><br>
+        <input type="checkbox" id="reading" name="hobbies" value="reading">
+        <label for="reading">Reading</label><br>
+        <input type="checkbox" id="sports" name="hobbies" value="Travelling">
+        <label for="sports">Travelling</label><br>
+        <input type="checkbox" id="music" name="hobbies" value="Cooking">
+        <label for="music">Cooking</label><br>
+        <input type="checkbox" id="music" name="hobbies" value="Sport">
+        <label for="music">Sport</label><br><br>
+        
+        <label for = "city">City:</label>
+        <select id = "city" name="city">
+        <option value="selectcity">Select your City</option>
+        <option value="delhi">Delhi</option>
+        <option value = "mumbai">Mumbai</option>
+        <option value = "chennai">Chennai</option>
+        <option value = "hyderabad">Hyderabad</option>
+        <option value = "pune">Pune</option></select><br><br>
+
+
+        <label for = "dob">Date of Birth:</label>
+        <input type="date" id="dob" required><br><br>
+
+
+        <label for="number">Phone Number:</label>  
+        <input type="text" id="mobile" name="mobile" maxlength="10" placeholder="10-digit number" required><br><br>
+
+
+        <label for = "address">Address:</label>
+        <textarea id ="address" name = "address" required></textarea><br><br>
+
+
+        <button id = "non" type="submit">Submit</button>
+    </form>
+    <script>
+        document.getElementById("non").onclick = function(){
+        location.href = "new.html";}
+    </script>
+</body>
+</html>
